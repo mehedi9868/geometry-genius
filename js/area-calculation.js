@@ -25,3 +25,17 @@ document.getElementById('card-two-btn').addEventListener('click', function () {
     const result = parseFloat((width * length).toFixed(2));
     displayResult('ordered-list', cardTitle, result)
 })
+
+// for card three:
+document.getElementById('card-three-btn').addEventListener('click', function () {
+    const cardTitle = document.getElementById('card-three-title').innerText;
+    const base = getIntutValue('card-three-base');
+    const height = getIntutValue('card-three-height');
+    //validation
+    if (isNaN(base) || isNaN(height) || base <= 0 || height <= 0) {
+        return alert('Please provide valid number.')
+    }
+    // formula Area (A) = b × h
+    const result = parseFloat((base * height).toFixed(2));
+    displayResult('ordered-list', cardTitle, result)
+})
