@@ -23,7 +23,125 @@
         </div>
     </header>
     <!-- header section end -->
-    <main></main>
+    <main>
+        <section>
+            <div class="flex justify-between">
+                <!-- all cards -->
+                <div id="all-cards" class="grid grid-cols-3 gap-5">
+                    <!-- card 1 -->
+                    <div class="card bg-red-200 w-96 bg-base-100 shadow-xl mb-6">
+                        <figure class="py-8">
+                            <img src="./images/triangle.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-center">Triangle</h2>
+                            <p class="text-center">Area (A) = 0.5 &times b &times h</p>
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="b"> cm
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="h"> cm
+                            <div class="text-center">
+                                <button class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card bg-blue-200 w-96 bg-base-100 shadow-xl mb-6">
+                        <figure class="py-8">
+                            <img src="./images/rectangle.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-center">Rectangle</h2>
+                            <p class="text-center">Area (A) = w &times l</p>
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="w"> cm
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="l"> cm
+                            <div class="text-center">
+                                <button class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card bg-yellow-200 w-96 bg-base-100 shadow-xl mb-6">
+                        <figure class="py-8">
+                            <img src="./images/parallelogram.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-center">Parallelogram</h2>
+                            <p class="text-center">Area (A) = b &times h</p>
+                            <p class="text-center">b=10cm, h=12cm</p>
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="b"> cm
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="h"> cm
+                            <div class="text-center">
+                                <button class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="card bg-emerald-200 w-96 bg-base-100 shadow-xl mb-6">
+                        <figure class="py-8">
+                            <img src="./images/rhombus.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-center">Rhombus</h2>
+                            <p class="text-center">Area (A) = 0.5 &times d<sub>1</sub> &times d<sub>2</sub></p>
+                            <p class="text-center">d<sub>1</sub> = 10cm, d<sub>2</sub> = 12cm</p>
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="d1"> cm
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="d2"> cm
+                            <div class="text-center">
+                                <button class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <div class="card bg-cyan-200 w-96 bg-base-100 shadow-xl mb-6">
+                        <figure class="py-8">
+                            <img src="./images/pentagon.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-center">Pentagon</h2>
+                            <p class="text-center">Area (A) = 0.5 &times p &times b</p>
+                            <p class="text-center">p = 6cm, b = 10cm</p>
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="p"> cm
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="b"> cm
+                            <div class="text-center">
+                                <button class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <div class="card bg-violet-200 w-96 bg-base-100 shadow-xl mb-6">
+                        <figure class="py-8">
+                            <img src="./images/ellipse.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="font-bold text-center">Ellipse</h2>
+                            <p class="text-center">Area (A) = πab</p>
+                            <p class="text-center">a = 10cm, b = 4cm</p>
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="a"> cm
+                            <input type="text" id="" class="w-[30%] px-4" placeholder="b"> cm
+                            <div class="text-center">
+                                <button class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- all cards -->
+                <!-- area calculation display section -->
+                <div id="area-calculation" class="w-[30%] h-[50vh] border">
+                    <h4 class="text-xl underline font-bold text-center pt-6 mb-7">Area Calculation</h4>
+                    <ol class="list-decimal px-10">
+                        <!-- <li class="mb-6">
+                            <div class="flex justify-between">
+                                <p>Tringle</p>
+                                <p>12cm<sup>2</sup></p>
+                                <button class="bg-blue-600 px-2 py-1 text-white rounded-md hover:bg-blue-400">Covert to
+                                    m<sup>2</sup></button>
+                            </div>
+                        </li> -->
+                    </ol>
+                </div>
+                <!-- area calculation display section end -->
+            </div>
+        </section>
+    </main>
     <footer></footer>
     <!-- js files -->
     <script src="./js/blog.js"></script>
