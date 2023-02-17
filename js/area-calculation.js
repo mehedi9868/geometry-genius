@@ -53,3 +53,17 @@ document.getElementById('card-four-btn').addEventListener('click', function () {
     const result = parseFloat((0.5 * diagonal1 * diagonal2).toFixed(2));
     displayResult('ordered-list', cardTitle, result)
 })
+
+// for card five:
+document.getElementById('card-five-btn').addEventListener('click', function () {
+    const cardTitle = document.getElementById('card-five-title').innerText;
+    const p = getIntutValue('card-five-p');
+    const b = getIntutValue('card-five-b');
+    //validation
+    if (isNaN(p) || isNaN(b) || p <= 0 || b <= 0) {
+        return alert('Please provide valid number.')
+    }
+    // formula Area (A) = 0.5 × p × b
+    const result = parseFloat((0.5 * p * b).toFixed(2));
+    displayResult('ordered-list', cardTitle, result)
+})
