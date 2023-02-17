@@ -14,7 +14,7 @@
 <body class="w-11/12 mx-auto">
     <!-- header section start -->
     <header class="flex justify-between items-center bg-blue-200 p-10 my-10 rounded-md">
-        <div>
+        <div id="header-brand-text">
             <h1 class="text-4xl font-bold">Interactive</h1>
             <h2 class="text-2xl text-gray-400">Geometry Genius</h2>
         </div>
@@ -34,12 +34,12 @@
                             <img src="./images/triangle.png" alt="Shoes" />
                         </figure>
                         <div class="card-body">
-                            <h2 class="font-bold text-center">Triangle</h2>
+                            <h2 id="card-one-title" class="font-bold text-center">Triangle</h2>
                             <p class="text-center">Area (A) = 0.5 &times b &times h</p>
-                            <input type="text" id="" class="w-[30%] px-4" placeholder="b"> cm
-                            <input type="text" id="" class="w-[30%] px-4" placeholder="h"> cm
+                            <input type="text" id="card-one-base" class="w-[30%] px-4" placeholder="b"> cm
+                            <input type="text" id="card-one-height" class="w-[30%] px-4" placeholder="h"> cm
                             <div class="text-center">
-                                <button class="btn btn-primary w-full">Calculate</button>
+                                <button id="card-one-btn" class="btn btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -127,15 +127,10 @@
                 <!-- area calculation display section -->
                 <div id="area-calculation" class="w-[30%] h-[50vh] border">
                     <h4 class="text-xl underline font-bold text-center pt-6 mb-7">Area Calculation</h4>
-                    <ol class="list-decimal px-10">
-                        <!-- <li class="mb-6">
-                            <div class="flex justify-between">
-                                <p>Tringle</p>
-                                <p>12cm<sup>2</sup></p>
-                                <button class="bg-blue-600 px-2 py-1 text-white rounded-md hover:bg-blue-400">Covert to
-                                    m<sup>2</sup></button>
-                            </div>
-                        </li> -->
+                    <ol id="ordered-list" class="list-decimal px-10">
+
+                        <!-- will dynamically add here -->
+
                     </ol>
                 </div>
                 <!-- area calculation display section end -->
