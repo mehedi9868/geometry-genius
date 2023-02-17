@@ -67,3 +67,17 @@ document.getElementById('card-five-btn').addEventListener('click', function () {
     const result = parseFloat((0.5 * p * b).toFixed(2));
     displayResult('ordered-list', cardTitle, result)
 })
+
+// for card six:
+document.getElementById('card-six-btn').addEventListener('click', function () {
+    const cardTitle = document.getElementById('card-six-title').innerText;
+    const a = getIntutValue('card-six-a');
+    const b = getIntutValue('card-six-b');
+    //validation
+    if (isNaN(a) || isNaN(b) || a <= 0 || b <= 0) {
+        return alert('Please provide valid number.')
+    }
+    // formula Area (A) = πab
+    const result = parseFloat((Math.PI * a * b).toFixed(2));
+    displayResult('ordered-list', cardTitle, result)
+})
