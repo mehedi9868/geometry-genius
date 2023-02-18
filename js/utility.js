@@ -22,13 +22,13 @@ function displayResult(id, title, result) {
     parentElement.appendChild(createdElement);
 }
 
-//common function 4:
+//common function 3:
 function clearInputField(id) {
     const inputField = document.getElementById(id);
     inputField.value = '';
 }
 
-// common function 3:
+// common function 4:
 function setBacground(id) {
     const red = Math.floor(Math.random() * 256);
     const green = Math.floor(Math.random() * 256);
